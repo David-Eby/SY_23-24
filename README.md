@@ -14,3 +14,5 @@ This README.md is for formatting tests as well as other tests. More could be com
 **1/9/24:** Started Visual Studio project
 
 **1/9/24:** Added text box to VS project
+
+**1/9/24:** Added a functional menu in menus
