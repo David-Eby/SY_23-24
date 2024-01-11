@@ -16,3 +16,5 @@ This README.md is for formatting tests as well as other tests. More could be com
 **1/9/24:** Added text box to VS project
 
 **1/9/24:** Added a functional menu in menus
+
+**1/10/24:** Started a Dex VS project
