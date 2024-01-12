@@ -1,4 +1,7 @@
-﻿Public Class Form1
+﻿Imports System.IO
+
+Public Class Form1
+    Dim records(49) As String
     Private Sub NewToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NewToolStripMenuItem.Click
         PictureBox1.Image = Nothing
         Field1.Text = ""
@@ -28,5 +31,13 @@
         outFile.Write(PictureBox1.ImageLocation)
         outFile.WriteLine()
         outFile.Close()
+    End Sub
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If IO.File.Exists("data.txt") Then
+            Dim inFile As New StreamReader("data.txt")
+            records(0) = inFile.ReadLine()
+            records(1) = inFile.ReadLine()
+            inFile.Close()
+        End If
     End Sub
 End Class
