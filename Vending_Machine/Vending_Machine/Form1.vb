@@ -3,18 +3,23 @@
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         cS.InsertDollar()
-        Label1.Text = cS.Total
+        Label1.Text = cS.Total.ToString("C2")
     End Sub
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         cS.InsertQuarter()
-        Label1.Text = cS.Total
+        Label1.Text = cS.Total.ToString("C2")
     End Sub
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         cS.InsertDime()
-        Label1.Text = cS.Total
+        Label1.Text = cS.Total.ToString("C2")
     End Sub
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         cS.InsertNickle()
-        Label1.Text = cS.Total
+        Label1.Text = cS.Total.ToString("C2")
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        cS.CoinReturn()
+        Label1.Text = cS.Total.ToString("C2")
     End Sub
 End Class

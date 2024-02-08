@@ -21,4 +21,11 @@
     Public Sub InsertNickle()
         Nickles = Nickles + 1
     End Sub
+
+    Public Sub CoinReturn()
+        Dollars = 0
+        Quarters = 0
+        Dimes = 0
+        Nickles = 0
+    End Sub
 End Class
