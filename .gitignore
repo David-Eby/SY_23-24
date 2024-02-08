@@ -398,3 +398,5 @@ FodyWeavers.xsd
 *.sln.iml
 
 CSharp_W3Schools/CSharp_W3Schools.sln
+
+CSharp_W3Schools/CSharp_W3Schools/
